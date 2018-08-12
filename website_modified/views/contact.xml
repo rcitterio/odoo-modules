@@ -1,0 +1,28 @@
+<odoo>
+
+    <!-- === Services Page === -->
+    <template id="contact_page_template">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container">
+                    <h1>Our Services</h1>
+                    <ul class="contact">
+                        <li>Hola mundo</li>
+
+                    </ul>
+
+                    <!-- === Snippets' area === -->
+                    <div class="oe_structure" />
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <record id="contact_page" model="website.page">
+        <field name="name">contact page</field>
+        <field name="website_published">True</field>
+        <field name="url">/contact</field>
+        <field name="view_id" ref="contact_page_template"/>
+    </record>
+
+</odoo>

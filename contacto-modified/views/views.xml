@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="contacto-modified.list">
+      <field name="name">contacto-modified list</field>
+      <field name="model">contacto-modified.contacto-modified</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="contacto-modified.action_window">
+      <field name="name">contacto-modified window</field>
+      <field name="res_model">contacto-modified.contacto-modified</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="contacto-modified.action_server">
+      <field name="name">contacto-modified server</field>
+      <field name="model_id" ref="model_contacto-modified_contacto-modified"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="contacto-modified" id="contacto-modified.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="contacto-modified.menu_1" parent="contacto-modified.menu_root"/>
+    <menuitem name="Menu 2" id="contacto-modified.menu_2" parent="contacto-modified.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="contacto-modified.menu_1_list" parent="contacto-modified.menu_1"
+              action="contacto-modified.action_window"/>
+    <menuitem name="Server to list" id="contacto-modified" parent="contacto-modified.menu_2"
+              action="contacto-modified.action_server"/>
+    -->
+  </data>
+</odoo>
